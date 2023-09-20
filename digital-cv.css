@@ -1,0 +1,41 @@
+.container {
+  background-color: blue;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+.Timeline {
+  grid-row: 1 / -1;
+  grid-column: 3/-1;
+}
+.card-items {
+  background-color: #f0f0f0;
+}
+/* Tablet, Mobile */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .d-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 0 !important;
+    margin-top: 20px !important;
+  }
+  .Timeline .d-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 0 !important;
+    margin-top: 20px !important;
+    align-items: start !important;
+  }
+  .Team .d-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 0 !important;
+    margin-top: 20px !important;
+    align-items: start !important;
+  }
+}
